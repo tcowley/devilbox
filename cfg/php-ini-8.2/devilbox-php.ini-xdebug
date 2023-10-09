@@ -26,10 +26,11 @@
 ; Make sure to read up on Xdebug some settings might significantly slow down requests.
 ; The following is just an example configuration and should be adjusted
 xdebug.mode               = debug
-xdebug.start_with_request = yes
+xdebug.start_with_request = trigger
 xdebug.remote_handler     = dbgp
 xdebug.remote_port        = 9000
-xdebug.idekey             = PHPSTORM
+xdebug.idekey             = XDEBUG_ECLIPSE
 xdebug.remote_log         = /var/log/php/xdebug.log
+xdebug.client_host        = host.docker.internal
 
 ; vim: set ft=dosini:
